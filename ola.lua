@@ -3,7 +3,7 @@ local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
 -- URL fixa do seu arquivo config.json no GitHub (link RAW)
-local CONFIG_URL_BASE = "https://gist.githubusercontent.com/FNJFDNFDNFDNFND/07b48a1c781e528e73fce773db1b857d/raw/4282347b80921fcb3f66c6269b7c35eee874f2a5/config.json"
+local CONFIG_URL_BASE = "https://gist.githubusercontent.com/FNJFDNFDNFDNFND/58fbcb594372242e6f986428acd17aa2/raw/87c49482a011b1b2f1483a539f41bb28254c0d98/config.json"
 
 local function prints(str)
     print("[AutoJobMonitor]: " .. str)

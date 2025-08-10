@@ -79,14 +79,22 @@ local function readJobID()
         end)(), ", "))
 
         if data.job_id and data.job_id ~= "" then
-            prints("✅ JobID encontrado na chave job_id: " .. tostring(data.job_id))
-            return tostring(data.job_id):gsub("%s+", "")
-        end
+    prints("✅ JobID encontrado na chave job_id: " .. tostring(data.job_id))
+    local cleanJob = tostring(data.job_id)
+        :gsub('"', '')   -- remove todas as aspas
+        :gsub("%s+", "") -- remove espaços
+    return cleanJob
+end
+
 
     elseif type(data) == "string" then
-        prints("✅ JobID encontrado como string pura: " .. tostring(data))
-        return data:gsub("%s+", "")
-    end
+    prints("✅ JobID encontrado como string pura: " .. tostring(data))
+    local cleanJob = data
+        :gsub('"', '')   -- remove aspas
+        :gsub("%s+", "") -- remove espaços
+    return cleanJob
+end
+
 
     prints("❌ Nenhum JobID válido encontrado no retorno.")
     return nil

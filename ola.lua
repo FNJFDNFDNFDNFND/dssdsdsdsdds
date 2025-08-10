@@ -1,7 +1,7 @@
 local HttpService = game:GetService("HttpService")
 
 -- URL fixa do seu arquivo config.json no GitHub (link RAW)
-local CONFIG_URL = "https://gist.githubusercontent.com/SEU_USUARIO/ID_DO_GIST/raw/config.json"
+local CONFIG_URL = "https://raw.githubusercontent.com/FNJFDNFDNFDNFND/dssdsdsdsdds/refs/heads/main/ola.lua"
 
 local function prints(str)
     print("[AutoJobMonitor]: " .. str)
